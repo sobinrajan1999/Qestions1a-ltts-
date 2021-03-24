@@ -71,7 +71,7 @@ int complex_mul(complex_t *num1,complex_t *num2){
     complex_t mul;
     mul.real=(num1->real*num2->real)-(num1->img * num2->img);
     mul.img=(num1->real * num2->img)+(num1->img * num2->real);
-    printf("multiplication of two complex number is: %d + (%f)i\n",mul.real,mul.img);    //output
+    printf("multiplication of two complex number is: %d + (%.0f)i\n",mul.real,mul.img);    //output
     return 1;
 }
 
