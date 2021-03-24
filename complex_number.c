@@ -37,7 +37,7 @@ void test_sum(void){
     TEST_ASSERT_EQUAL(1,complex_sum(&num3,&num4));
     TEST_ASSERT_EQUAL(1,complex_sum(&num1,&num4));
     TEST_ASSERT_EQUAL(1,complex_sum(&num1,&num3));
-    TEST_ASSERT_EQUAL(1,complex_sum(NULL,NULL));
+    TEST_ASSERT_EQUAL(0,complex_sum(NULL,NULL));
     
 }
 
@@ -51,7 +51,7 @@ void test_diff(void){
     TEST_ASSERT_EQUAL(1,complex_diff(&num3,&num4));
     TEST_ASSERT_EQUAL(1,complex_diff(&num1,&num4));
     TEST_ASSERT_EQUAL(1,complex_diff(&num1,&num3));
-    TEST_ASSERT_EQUAL(1,complex_diff(NULL,NULL));
+    TEST_ASSERT_EQUAL(0,complex_diff(NULL,NULL));
     
 }
 
@@ -65,7 +65,7 @@ void test_mul(void){
     TEST_ASSERT_EQUAL(1,complex_mul(&num3,&num4));
     TEST_ASSERT_EQUAL(1,complex_mul(&num1,&num4));
     TEST_ASSERT_EQUAL(1,complex_mul(&num1,&num3));
-    TEST_ASSERT_EQUAL(1,complex_mul(NULL,NULL));
+    TEST_ASSERT_EQUAL(0,complex_mul(NULL,NULL));
 }
 
 /**
@@ -78,7 +78,7 @@ void test_div(void){
     TEST_ASSERT_EQUAL(1,complex_div(&num3,&num4));
     TEST_ASSERT_EQUAL(1,complex_div(&num1,&num4));
     TEST_ASSERT_EQUAL(1,complex_div(&num1,&num3));
-    TEST_ASSERT_EQUAL(1,complex_div(&num1,&zerovalue));
+    TEST_ASSERT_EQUAL(0,complex_div(&num1,&zerovalue));
 }
 
 /**
